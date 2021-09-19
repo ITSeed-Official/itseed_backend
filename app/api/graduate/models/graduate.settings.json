@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "graduates",
+  "info": {
+    "name": "graduates",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "session": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "school": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    }
+  }
+}
