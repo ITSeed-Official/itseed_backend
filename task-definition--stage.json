@@ -6,7 +6,7 @@
     "containerDefinitions": [
         {
             "name": "itseed-backend",
-            "image": "nickchensudo/itseed_backend:{WILL_BE_REPLACE}",
+            "image": "itseedsystem/itseed_backend:{WILL_BE_REPLACE}",
             "resourceRequirements": null,
             "essential": true,
             "portMappings": [
