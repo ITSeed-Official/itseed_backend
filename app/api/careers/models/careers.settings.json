@@ -25,6 +25,17 @@
     },
     "content": {
       "type": "richtext"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "company",
+        "personalization",
+        "interview"
+      ]
+    },
+    "overview_content": {
+      "type": "text"
     }
   }
 }
