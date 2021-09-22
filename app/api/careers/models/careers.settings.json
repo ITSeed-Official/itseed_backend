@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "careers",
+  "info": {
+    "name": "careers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mentee": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "mentor_session": {
+      "type": "integer"
+    },
+    "mentor": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "company",
+        "personalization",
+        "interview"
+      ]
+    },
+    "overview_content": {
+      "type": "text"
+    }
+  }
+}
