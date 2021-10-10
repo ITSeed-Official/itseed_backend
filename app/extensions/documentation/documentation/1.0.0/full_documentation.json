@@ -2433,8 +2433,13 @@
             "application/json": {
               "schema": {
                 "properties": {
-                  "foo": {
-                    "type": "string"
+                  "identifier": {
+                    "type": "string",
+                    "description": "The register's username or the email"
+                  },
+                  "password": {
+                    "type": "string",
+                    "description": "The register's password"
                   }
                 }
               }
@@ -2635,7 +2640,7 @@
             "application/json": {
               "schema": {
                 "properties": {
-                  "foo": {
+                  "email": {
                     "type": "string"
                   }
                 }
@@ -2706,7 +2711,13 @@
             "application/json": {
               "schema": {
                 "properties": {
-                  "foo": {
+                  "code": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  },
+                  "passwordConfirmation": {
                     "type": "string"
                   }
                 }
@@ -3294,22 +3305,140 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Email - Email"
-    },
-    {
-      "name": "Upload - File"
-    },
-    {
-      "name": "UsersPermissions - Role"
-    },
-    {
-      "name": "UsersPermissions - User"
-    }
-  ],
   "components": {
     "schemas": {
+      "Careers": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "mentee": {
+            "type": "string"
+          },
+          "position": {
+            "type": "string"
+          },
+          "mentor_session": {
+            "type": "integer"
+          },
+          "mentor": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "company",
+              "personalization",
+              "interview"
+            ]
+          },
+          "overview_content": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewCareers": {
+        "properties": {
+          "mentee": {
+            "type": "string"
+          },
+          "position": {
+            "type": "string"
+          },
+          "mentor_session": {
+            "type": "integer"
+          },
+          "mentor": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "company",
+              "personalization",
+              "interview"
+            ]
+          },
+          "overview_content": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
+      "Graduate": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "session": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "school": {
+            "type": "string"
+          },
+          "department": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewGraduate": {
+        "properties": {
+          "session": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "school": {
+            "type": "string"
+          },
+          "department": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
       "UsersPermissionsRole": {
         "required": [
           "id",
@@ -3594,5 +3723,25 @@
         "bearerFormat": "JWT"
       }
     }
-  }
+  },
+  "tags": [
+    {
+      "name": "Careers"
+    },
+    {
+      "name": "Graduate"
+    },
+    {
+      "name": "Email - Email"
+    },
+    {
+      "name": "Upload - File"
+    },
+    {
+      "name": "UsersPermissions - Role"
+    },
+    {
+      "name": "UsersPermissions - User"
+    }
+  ]
 }
