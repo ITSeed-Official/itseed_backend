@@ -5,6 +5,8 @@ services:
       context: .
     command: npm run develop
     restart: always
+    env_file:
+      - ./app/.env
     environment:
       DATABASE_HOST: mysql
       DATABASE_PORT: 3306
