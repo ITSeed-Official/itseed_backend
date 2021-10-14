@@ -9,7 +9,7 @@ The ITSeed official website's APIs and CMS
 
 1. Create and turn on the development environment
 ```
-  docker-comopse up -d
+  docker-compose up -d
 ```
 2. Test the website
   [http://localhost:1337/](http://localhost:1337/)
