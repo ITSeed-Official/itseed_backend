@@ -22,4 +22,7 @@ module.exports = ({ env }) => ({
       cdn: env('AWS_CLOUDFRONT')
     },
   },
+  sentry: {
+    dsn: env('SENTRY_DSN'),
+  },
 });
