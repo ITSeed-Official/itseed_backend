@@ -3,7 +3,7 @@ name: conventionally release
 on:
   push:
     branches:
-    - main
+    - debug/add-release-action
 
 jobs:
   conventionally-release:
