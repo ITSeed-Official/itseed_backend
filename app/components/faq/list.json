@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_faq_lists",
+  "info": {
+    "name": "list",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "richtext"
+    }
+  }
+}
