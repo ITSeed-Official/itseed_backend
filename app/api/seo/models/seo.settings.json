@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seos",
+  "info": {
+    "name": "seo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "path": {
+      "type": "string",
+      "required": true
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.seo",
+      "required": true
+    }
+  }
+}

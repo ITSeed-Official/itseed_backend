@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_seo_seos",
+  "info": {
+    "name": "list",
+    "icon": "map",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 160
+    },
+    "keywords": {
+      "type": "string"
+    }
+  }
+}
