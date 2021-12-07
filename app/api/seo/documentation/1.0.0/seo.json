@@ -532,7 +532,9 @@
             "required": [
               "id",
               "title",
-              "description"
+              "description",
+              "og_title",
+              "og_description"
             ],
             "properties": {
               "id": {
@@ -546,7 +548,18 @@
                 "type": "string",
                 "maxLength": 160
               },
-              "keywords": {
+              "og_title": {
+                "type": "string",
+                "maxLength": 60
+              },
+              "og_description": {
+                "type": "string",
+                "maxLength": 160
+              },
+              "og_url": {
+                "type": "string"
+              },
+              "og_image": {
                 "type": "string"
               }
             }
@@ -571,7 +584,9 @@
             "required": [
               "id",
               "title",
-              "description"
+              "description",
+              "og_title",
+              "og_description"
             ],
             "properties": {
               "id": {
@@ -585,7 +600,18 @@
                 "type": "string",
                 "maxLength": 160
               },
-              "keywords": {
+              "og_title": {
+                "type": "string",
+                "maxLength": 60
+              },
+              "og_description": {
+                "type": "string",
+                "maxLength": 160
+              },
+              "og_url": {
+                "type": "string"
+              },
+              "og_image": {
                 "type": "string"
               }
             }
