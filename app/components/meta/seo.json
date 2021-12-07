@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_seo_seos",
+  "info": {
+    "name": "list",
+    "icon": "map",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 160
+    },
+    "og_title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "og_description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 160
+    },
+    "og_url": {
+      "type": "string"
+    },
+    "og_image": {
+      "type": "string"
+    }
+  }
+}
