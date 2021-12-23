@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "careers",
   "info": {
-    "name": "careers"
+    "name": "careers",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -15,12 +16,6 @@
       "type": "string"
     },
     "position": {
-      "type": "string"
-    },
-    "mentor_session": {
-      "type": "integer"
-    },
-    "mentor": {
       "type": "string"
     },
     "content": {
@@ -36,6 +31,17 @@
     },
     "overview_content": {
       "type": "text"
+    },
+    "company": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "Mentors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "mentor.detail"
     }
   }
 }

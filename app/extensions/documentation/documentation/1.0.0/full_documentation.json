@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/07/2021 2:44:37 PM"
+    "x-generation-date": "12/23/2021 10:54:37 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4144,12 +4144,6 @@
           "position": {
             "type": "string"
           },
-          "mentor_session": {
-            "type": "integer"
-          },
-          "mentor": {
-            "type": "string"
-          },
           "content": {
             "type": "string"
           },
@@ -4163,6 +4157,44 @@
           },
           "overview_content": {
             "type": "string"
+          },
+          "company": {
+            "type": "string"
+          },
+          "image_url": {
+            "type": "string"
+          },
+          "Mentors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "image_url": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "facebook_link": {
+                  "type": "string"
+                },
+                "linkedin_url": {
+                  "type": "string"
+                },
+                "email_address": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -4178,12 +4210,6 @@
           "position": {
             "type": "string"
           },
-          "mentor_session": {
-            "type": "integer"
-          },
-          "mentor": {
-            "type": "string"
-          },
           "content": {
             "type": "string"
           },
@@ -4197,6 +4223,44 @@
           },
           "overview_content": {
             "type": "string"
+          },
+          "company": {
+            "type": "string"
+          },
+          "image_url": {
+            "type": "string"
+          },
+          "Mentors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "image_url": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "facebook_link": {
+                  "type": "string"
+                },
+                "linkedin_url": {
+                  "type": "string"
+                },
+                "email_address": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
