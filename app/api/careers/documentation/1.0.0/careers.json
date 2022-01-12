@@ -580,6 +580,12 @@
               }
             }
           },
+          "role": {
+            "type": "string"
+          },
+          "mentors_overview": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -645,6 +651,12 @@
                 }
               }
             }
+          },
+          "role": {
+            "type": "string"
+          },
+          "mentors_overview": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
