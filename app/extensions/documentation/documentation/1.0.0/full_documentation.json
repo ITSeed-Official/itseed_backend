@@ -4675,7 +4675,7 @@
           "image_url": {
             "type": "string"
           },
-          "Mentors": {
+          "mentors": {
             "type": "array",
             "items": {
               "type": "object",
@@ -4741,7 +4741,7 @@
           "image_url": {
             "type": "string"
           },
-          "Mentors": {
+          "mentors": {
             "type": "array",
             "items": {
               "type": "object",

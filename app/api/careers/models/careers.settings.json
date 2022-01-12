@@ -38,7 +38,7 @@
     "image_url": {
       "type": "string"
     },
-    "Mentors": {
+    "mentors": {
       "type": "component",
       "repeatable": true,
       "component": "mentor.detail"
