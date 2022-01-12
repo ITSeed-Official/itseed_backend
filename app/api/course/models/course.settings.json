@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "course"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "overview": {
+      "type": "text"
+    },
+    "lecturer": {
+      "type": "string"
+    },
+    "lecturer_company": {
+      "type": "string"
+    },
+    "lecturer_position": {
+      "type": "string"
+    },
+    "lecturer_background": {
+      "type": "richtext"
+    },
+    "agenda": {
+      "type": "richtext"
+    },
+    "experience": {
+      "type": "richtext"
+    },
+    "sharer": {
+      "type": "string"
+    },
+    "sharer_education": {
+      "type": "string"
+    }
+  }
+}
