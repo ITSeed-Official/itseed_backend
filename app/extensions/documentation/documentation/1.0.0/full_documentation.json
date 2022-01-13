@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/28/2021 12:02:01 AM"
+    "x-generation-date": "01/13/2022 12:05:25 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4655,12 +4655,6 @@
           "position": {
             "type": "string"
           },
-          "mentor_session": {
-            "type": "integer"
-          },
-          "mentor": {
-            "type": "string"
-          },
           "content": {
             "type": "string"
           },
@@ -4673,6 +4667,50 @@
             ]
           },
           "overview_content": {
+            "type": "string"
+          },
+          "company": {
+            "type": "string"
+          },
+          "image_url": {
+            "type": "string"
+          },
+          "mentors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "image_url": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "facebook_link": {
+                  "type": "string"
+                },
+                "linkedin_url": {
+                  "type": "string"
+                },
+                "email_address": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "role": {
+            "type": "string"
+          },
+          "mentors_overview": {
             "type": "string"
           },
           "published_at": {
@@ -4689,12 +4727,6 @@
           "position": {
             "type": "string"
           },
-          "mentor_session": {
-            "type": "integer"
-          },
-          "mentor": {
-            "type": "string"
-          },
           "content": {
             "type": "string"
           },
@@ -4707,6 +4739,50 @@
             ]
           },
           "overview_content": {
+            "type": "string"
+          },
+          "company": {
+            "type": "string"
+          },
+          "image_url": {
+            "type": "string"
+          },
+          "mentors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "image_url": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "facebook_link": {
+                  "type": "string"
+                },
+                "linkedin_url": {
+                  "type": "string"
+                },
+                "email_address": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "role": {
+            "type": "string"
+          },
+          "mentors_overview": {
             "type": "string"
           },
           "published_at": {
