@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_mentor_details",
+  "info": {
+    "name": "detail",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "facebook_link": {
+      "type": "string"
+    },
+    "linkedin_url": {
+      "type": "string"
+    },
+    "email_address": {
+      "type": "string"
+    }
+  }
+}

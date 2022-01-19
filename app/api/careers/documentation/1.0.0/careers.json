@@ -528,12 +528,6 @@
           "position": {
             "type": "string"
           },
-          "mentor_session": {
-            "type": "integer"
-          },
-          "mentor": {
-            "type": "string"
-          },
           "content": {
             "type": "string"
           },
@@ -546,6 +540,50 @@
             ]
           },
           "overview_content": {
+            "type": "string"
+          },
+          "company": {
+            "type": "string"
+          },
+          "image_url": {
+            "type": "string"
+          },
+          "mentors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "image_url": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "facebook_link": {
+                  "type": "string"
+                },
+                "linkedin_url": {
+                  "type": "string"
+                },
+                "email_address": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "role": {
+            "type": "string"
+          },
+          "mentors_overview": {
             "type": "string"
           },
           "published_at": {
@@ -562,12 +600,6 @@
           "position": {
             "type": "string"
           },
-          "mentor_session": {
-            "type": "integer"
-          },
-          "mentor": {
-            "type": "string"
-          },
           "content": {
             "type": "string"
           },
@@ -580,6 +612,50 @@
             ]
           },
           "overview_content": {
+            "type": "string"
+          },
+          "company": {
+            "type": "string"
+          },
+          "image_url": {
+            "type": "string"
+          },
+          "mentors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "image_url": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "facebook_link": {
+                  "type": "string"
+                },
+                "linkedin_url": {
+                  "type": "string"
+                },
+                "email_address": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "role": {
+            "type": "string"
+          },
+          "mentors_overview": {
             "type": "string"
           },
           "published_at": {
