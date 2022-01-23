@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "visitations",
+  "info": {
+    "name": "visitation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image_path": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "richtext"
+    }
+  }
+}
