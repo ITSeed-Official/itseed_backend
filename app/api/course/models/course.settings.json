@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "courses",
   "info": {
-    "name": "course"
+    "name": "course",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -43,6 +44,18 @@
     },
     "sharer_education": {
       "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
