@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/23/2022 10:16:42 AM"
+    "x-generation-date": "03/24/2022 10:41:44 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6179,13 +6179,7 @@
           "title": {
             "type": "string"
           },
-          "image_url": {
-            "type": "string"
-          },
           "position": {
-            "type": "string"
-          },
-          "content": {
             "type": "string"
           },
           "category": {
@@ -6195,6 +6189,76 @@
               "leader",
               "junior"
             ]
+          },
+          "content": {
+            "type": "string"
+          },
+          "image": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -6210,13 +6274,7 @@
           "title": {
             "type": "string"
           },
-          "image_url": {
-            "type": "string"
-          },
           "position": {
-            "type": "string"
-          },
-          "content": {
             "type": "string"
           },
           "category": {
@@ -6226,6 +6284,9 @@
               "leader",
               "junior"
             ]
+          },
+          "content": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
