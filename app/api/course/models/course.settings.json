@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "courses",
   "info": {
-    "name": "course"
+    "name": "course",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 16
     },
     "subtitle": {
       "type": "string"
