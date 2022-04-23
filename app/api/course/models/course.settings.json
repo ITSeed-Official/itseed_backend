@@ -56,6 +56,11 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "number": {
+      "type": "integer",
+      "min": 1,
+      "required": true
     }
   }
 }
