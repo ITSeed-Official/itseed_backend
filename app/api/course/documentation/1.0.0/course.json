@@ -516,7 +516,8 @@
     "schemas": {
       "Course": {
         "required": [
-          "id"
+          "id",
+          "number"
         ],
         "properties": {
           "id": {
@@ -622,6 +623,9 @@
               }
             }
           },
+          "number": {
+            "type": "integer"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -629,6 +633,9 @@
         }
       },
       "NewCourse": {
+        "required": [
+          "number"
+        ],
         "properties": {
           "title": {
             "type": "string"
@@ -662,6 +669,9 @@
           },
           "sharer_education": {
             "type": "string"
+          },
+          "number": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
