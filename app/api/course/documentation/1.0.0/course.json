@@ -524,7 +524,8 @@
             "type": "string"
           },
           "title": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 16
           },
           "subtitle": {
             "type": "string"
@@ -638,7 +639,8 @@
         ],
         "properties": {
           "title": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 16
           },
           "subtitle": {
             "type": "string"
