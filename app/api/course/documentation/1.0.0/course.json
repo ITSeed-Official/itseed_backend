@@ -523,7 +523,8 @@
             "type": "string"
           },
           "title": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 16
           },
           "subtitle": {
             "type": "string"
@@ -631,7 +632,8 @@
       "NewCourse": {
         "properties": {
           "title": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 16
           },
           "subtitle": {
             "type": "string"

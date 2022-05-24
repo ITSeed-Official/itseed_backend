@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/19/2022 11:44:34 PM"
+    "x-generation-date": "04/23/2022 5:51:09 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5828,7 +5828,8 @@
             "type": "string"
           },
           "title": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 16
           },
           "subtitle": {
             "type": "string"
@@ -5936,7 +5937,8 @@
       "NewCourse": {
         "properties": {
           "title": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 16
           },
           "subtitle": {
             "type": "string"
