@@ -528,9 +528,6 @@
           "description": {
             "type": "string"
           },
-          "image_path": {
-            "type": "string"
-          },
           "experience": {
             "type": "string"
           },
@@ -546,9 +543,6 @@
             "type": "string"
           },
           "description": {
-            "type": "string"
-          },
-          "image_path": {
             "type": "string"
           },
           "experience": {
