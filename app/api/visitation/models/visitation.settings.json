@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "visitations",
   "info": {
-    "name": "visitation"
+    "name": "visitation",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -16,9 +17,6 @@
     },
     "description": {
       "type": "richtext"
-    },
-    "image_path": {
-      "type": "string"
     },
     "experience": {
       "type": "richtext"

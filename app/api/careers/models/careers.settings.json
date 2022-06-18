@@ -35,9 +35,6 @@
     "company": {
       "type": "string"
     },
-    "image_url": {
-      "type": "string"
-    },
     "mentors": {
       "type": "component",
       "repeatable": true,
@@ -48,6 +45,18 @@
     },
     "mentors_overview": {
       "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
