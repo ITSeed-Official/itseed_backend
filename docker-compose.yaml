@@ -11,7 +11,7 @@ services:
       DATABASE_HOST: mysql
       DATABASE_PORT: 3306
       DATABASE_NAME: strapi
-      DATABASE_USERNAME: strapi
+      DATABASE_USERNAME: root
       DATABASE_PASSWORD: strapi
       DATABASE_SSL: 'false'
     volumes:
@@ -19,17 +19,9 @@ services:
       - /srv/app/node_modules
     ports:
       - 1337:1337
-    depends_on:
-      - mysql
-  mysql:
-    image: mysql
-    command: mysqld --default-authentication-plugin=mysql_native_password
-    volumes:
-      - ./volumes/data:/var/lib/mysql
-    ports:
-      - 3306:3306
-    environment:
-      MYSQL_ROOT_PASSWORD: strapi
-      MYSQL_DATABASE: strapi
-      MYSQL_USER: strapi
-      MYSQL_PASSWORD: strapi
+    networks:
+      - itseed_api_itseed-net
+networks:
+  itseed_api_itseed-net:
+    external: true
+      
