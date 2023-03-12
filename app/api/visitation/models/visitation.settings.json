@@ -17,9 +17,6 @@
     },
     "description": {
       "type": "richtext"
-    },
-    "experience": {
-      "type": "richtext"
     }
   }
 }

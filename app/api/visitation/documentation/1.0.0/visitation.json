@@ -528,9 +528,6 @@
           "description": {
             "type": "string"
           },
-          "experience": {
-            "type": "string"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -543,9 +540,6 @@
             "type": "string"
           },
           "description": {
-            "type": "string"
-          },
-          "experience": {
             "type": "string"
           },
           "published_at": {
