@@ -19,7 +19,8 @@ module.exports = ({ env }) => ({
       params: {
         Bucket: env('AWS_S3_BUCKET'),
       },
-      cdn: env('AWS_CLOUDFRONT')
+      cdn: env('AWS_CLOUDFRONT'),
+      sizeLimit: 250 * 1024 * 1024
     },
   },
   sentry: {
