@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/visitations": {
+    "/campaigns": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the campaigns's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve campaigns document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Visitation"
+                    "$ref": "#/components/schemas/Campaigns"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Visitation"
+          "Campaigns"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new campaigns record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve campaigns document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Visitation"
+                  "$ref": "#/components/schemas/Campaigns"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Visitation"
+          "Campaigns"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewVisitation"
+                "$ref": "#/components/schemas/NewCampaigns"
               }
             }
           }
         }
       }
     },
-    "/visitations/count": {
+    "/campaigns/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the number of campaigns documents",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve campaigns document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Visitation"
+          "Campaigns"
         ],
         "parameters": []
       }
     },
-    "/visitations/{id}": {
+    "/campaigns/{id}": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find one campaigns record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve campaigns document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Visitation"
+                  "$ref": "#/components/schemas/Campaigns"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Visitation"
+          "Campaigns"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single campaigns record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve campaigns document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Visitation"
+                  "$ref": "#/components/schemas/Campaigns"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Visitation"
+          "Campaigns"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewVisitation"
+                "$ref": "#/components/schemas/NewCampaigns"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single campaigns record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single campaigns based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Visitation"
+          "Campaigns"
         ],
         "parameters": [
           {
@@ -514,87 +514,94 @@
   },
   "components": {
     "schemas": {
-      "Visitation": {
+      "Campaigns": {
         "required": [
-          "id"
+          "id",
+          "text",
+          "started_at",
+          "ended_at",
+          "image"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "name": {
-            "type": "string"
+          "text": {
+            "type": "string",
+            "maxLength": 10
           },
-          "description": {
-            "type": "string"
+          "started_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ended_at": {
+            "type": "string",
+            "format": "date-time"
           },
           "image": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -604,13 +611,24 @@
           }
         }
       },
-      "NewVisitation": {
+      "NewCampaigns": {
+        "required": [
+          "text",
+          "started_at",
+          "ended_at"
+        ],
         "properties": {
-          "name": {
-            "type": "string"
+          "text": {
+            "type": "string",
+            "maxLength": 10
           },
-          "description": {
-            "type": "string"
+          "started_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ended_at": {
+            "type": "string",
+            "format": "date-time"
           },
           "published_at": {
             "type": "string",
@@ -628,7 +646,7 @@
   },
   "tags": [
     {
-      "name": "Visitation"
+      "name": "Campaigns"
     }
   ]
 }
