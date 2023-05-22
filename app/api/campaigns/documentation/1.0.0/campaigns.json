@@ -520,7 +520,8 @@
           "text",
           "started_at",
           "ended_at",
-          "image"
+          "image",
+          "url"
         ],
         "properties": {
           "id": {
@@ -605,6 +606,9 @@
               }
             }
           },
+          "url": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -615,7 +619,8 @@
         "required": [
           "text",
           "started_at",
-          "ended_at"
+          "ended_at",
+          "url"
         ],
         "properties": {
           "text": {
@@ -629,6 +634,9 @@
           "ended_at": {
             "type": "string",
             "format": "date-time"
+          },
+          "url": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
